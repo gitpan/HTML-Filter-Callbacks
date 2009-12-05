@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               HTML-Filter-Callbacks
-version:            0.01
+version:            0.02
 abstract:           modify HTML with callbacks
 author:
     - Kenichi Ishigaki <ishigaki@cpan.org>

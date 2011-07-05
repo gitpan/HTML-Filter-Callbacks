@@ -95,7 +95,7 @@ sub remove_attr {
   return unless $self->{attrs};
   return unless defined $cond and length $cond;
 
-  $cond = qr/^$cond$/ unless ref $cond;
+  $cond = qr/^$cond$/i unless ref $cond;
 
   my $offset = scalar @{ $self->{attrs} };
   while ($offset > 0) {
@@ -113,7 +113,7 @@ sub replace_attr {
   return unless $self->{attrs};
   return unless defined $cond and length $cond;
 
-  $cond = qr/^$cond$/ unless ref $cond;
+  $cond = qr/^$cond$/i unless ref $cond;
 
   my $offset = scalar @{ $self->{attrs} };
   while ($offset > 0) {
@@ -175,9 +175,10 @@ sub attr {
 
   return unless $self->{attrs};
 
+  $name = lc $name;
   my $offset = scalar @{ $self->{attrs} };
   while ($offset > 0) {
-    if (lc $self->{attrs}->[$offset - 2] eq lc $name) {
+    if (lc $self->{attrs}->[$offset - 2] eq $name) {
       my $value = $self->_remove_quote($self->{attrs}->[$offset - 1]);
       return decode_entities($value);
     }
@@ -281,6 +282,8 @@ returns an HTML expression of the tag (with the skipped and inserted texts).
 =head1 AUTHOR
 
 Kenichi Ishigaki, E<lt>ishigaki@cpan.orgE<gt>
+
+Yuji Shimada E<lt>xaicron@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 

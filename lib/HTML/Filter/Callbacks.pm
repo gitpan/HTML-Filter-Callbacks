@@ -5,7 +5,7 @@ use warnings;
 use base 'HTML::Parser';
 use HTML::Filter::Callbacks::Tag;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 my %Handlers = (
   start => [\&_handler, 'self,event,tokens,text,skipped_text'],
@@ -170,6 +170,8 @@ L<HTML::Parser>
 =head1 AUTHOR
 
 Kenichi Ishigaki, E<lt>ishigaki@cpan.orgE<gt>
+
+Yuji Shimada E<lt>xaicron@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 

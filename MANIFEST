@@ -11,4 +11,5 @@ t/30_code_reuse.t
 t/99_pod.t
 t/99_podcoverage.t
 t/lib/TestFilter.pm
-META.yml                                 Module meta-data (added by MakeMaker)
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)

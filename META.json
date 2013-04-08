@@ -1,13 +1,11 @@
 {
    "abstract" : "modify HTML with callbacks",
    "author" : [
-      "Kenichi Ishigaki <ishigaki@cpan.org>"
+      "Kenichi Ishigaki, <ishigaki@cpan.org>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112621",
-   "license" : [
-      "perl_5"
-   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v0.0.52",
+   "license" : "perl_5",
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
@@ -16,18 +14,33 @@
    "no_index" : {
       "directory" : [
          "t",
-         "inc"
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
       ]
    },
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : 0
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : 0
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Prereqs" : "0",
+            "Module::Build" : "0.38"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Wordlist::hanekomu" : "0",
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0.10108",
+            "Test::Pod" : "1.41",
+            "Test::Spelling" : "0"
          }
       },
       "runtime" : {
@@ -38,6 +51,30 @@
          }
       }
    },
+   "provides" : {
+      "HTML::Filter::Callbacks" : {
+         "file" : "lib/HTML/Filter/Callbacks.pm",
+         "version" : "0.09"
+      },
+      "HTML::Filter::Callbacks::Tag" : {
+         "file" : "lib/HTML/Filter/Callbacks/Tag.pm"
+      }
+   },
    "release_status" : "stable",
-   "version" : "0.08"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/charsbar/html-filter-callbacks/issues"
+      },
+      "homepage" : "https://github.com/charsbar/html-filter-callbacks",
+      "repository" : {
+         "url" : "git://github.com/charsbar/html-filter-callbacks.git",
+         "web" : "https://github.com/charsbar/html-filter-callbacks"
+      }
+   },
+   "version" : "0.09",
+   "x_contributors" : [
+      "ishigaki <ishigaki@localhost.localdomain>",
+      "cos31 <cos31@ymail.com>",
+      "xaicron <xaicron@gmail.com>"
+   ]
 }

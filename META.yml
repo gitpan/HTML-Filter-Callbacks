@@ -9,7 +9,7 @@ configure_requires:
   CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Minilla/v0.0.52, CPAN::Meta::Converter version 2.130870'
+generated_by: 'Minilla/v0.0.53, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,10 +23,11 @@ no_index:
     - share
     - eg
     - examples
+    - author
 provides:
   HTML::Filter::Callbacks:
     file: lib/HTML/Filter/Callbacks.pm
-    version: 0.09
+    version: 0.10
   HTML::Filter::Callbacks::Tag:
     file: lib/HTML/Filter/Callbacks/Tag.pm
 requires:
@@ -37,7 +38,7 @@ resources:
   bugtracker: https://github.com/charsbar/html-filter-callbacks/issues
   homepage: https://github.com/charsbar/html-filter-callbacks
   repository: git://github.com/charsbar/html-filter-callbacks.git
-version: 0.09
+version: 0.10
 x_contributors:
   - 'ishigaki <ishigaki@localhost.localdomain>'
   - 'cos31 <cos31@ymail.com>'

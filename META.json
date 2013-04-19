@@ -4,7 +4,7 @@
       "Kenichi Ishigaki, <ishigaki@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.0.52",
+   "generated_by" : "Minilla/v0.0.53",
    "license" : "perl_5",
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -18,7 +18,8 @@
          "inc",
          "share",
          "eg",
-         "examples"
+         "examples",
+         "author"
       ]
    },
    "prereqs" : {
@@ -36,11 +37,10 @@
       },
       "develop" : {
          "requires" : {
-            "Pod::Wordlist::hanekomu" : "0",
             "Test::CPAN::Meta" : "0",
             "Test::MinimumVersion" : "0.10108",
             "Test::Pod" : "1.41",
-            "Test::Spelling" : "0"
+            "Test::Spellunker" : "v0.0.3"
          }
       },
       "runtime" : {
@@ -54,7 +54,7 @@
    "provides" : {
       "HTML::Filter::Callbacks" : {
          "file" : "lib/HTML/Filter/Callbacks.pm",
-         "version" : "0.09"
+         "version" : "0.10"
       },
       "HTML::Filter::Callbacks::Tag" : {
          "file" : "lib/HTML/Filter/Callbacks/Tag.pm"
@@ -71,7 +71,7 @@
          "web" : "https://github.com/charsbar/html-filter-callbacks"
       }
    },
-   "version" : "0.09",
+   "version" : "0.10",
    "x_contributors" : [
       "ishigaki <ishigaki@localhost.localdomain>",
       "cos31 <cos31@ymail.com>",
